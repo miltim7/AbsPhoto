@@ -1,0 +1,322 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотограф Анна Супельман</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet" href="header/header.css">
+    <script defer src="header/header.js"></script>
+
+    <link rel="stylesheet" href="hero/hero.css">
+    <script defer src="hero/hero.js"></script>
+
+    <link rel="stylesheet" href="services/services.css">
+    <script defer src="services/services.js"></script>
+
+    <link rel="stylesheet" href="portfolio/portfolio.css">
+    <script defer src="portfolio/portfolio.js"></script>
+
+    <link rel="stylesheet" href="prices/prices.css">
+    <script defer src="prices/prices.js"></script>
+
+    <link rel="stylesheet" href="how-to-order/how-to-order.css">
+    <script defer src="how-to-order/how-to-order.js"></script>
+
+    <link rel="stylesheet" href="payment/payment.css">
+    <script defer src="payment/payment.js"></script>
+
+    <link rel="stylesheet" href="faq/faq.css">
+    <script defer src="faq/faq.js"></script>
+
+    <link rel="stylesheet" href="footer/footer.css">
+    <script defer src="footer/footer.js"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="/" class="logo">AVS Photo</a>
+
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link active">Главная</a></li>
+                <li><a href="#services" class="nav-link">Услуги</a></li>
+                <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+                <li><a href="#prices" class="nav-link">Цены</a></li>
+                <li><a href="#how-to-order" class="nav-link">Как заказать</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="/contact.html" class="nav-link">Контакты</a></li>
+            </ul>
+
+            <a href="#how-to-order" class="cta-button desktop-only">Заказать съемку</a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#hero" class="nav-link">Главная</a>
+            <a href="#services" class="nav-link">Услуги</a>
+            <a href="#portfolio" class="nav-link">Портфолио</a>
+            <a href="#prices" class="nav-link">Цены</a>
+            <a href="#how-to-order" class="nav-link">Как заказать</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="/contact.html" class="nav-link">Контакты</a>
+            <a href="#how-to-order" class="cta-button">Заказать съемку</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-main">Создаю кадры</span>
+                        <span class="title-accent">которые останутся с вами навсегда</span>
+                    </h1>
+                    <p class="hero-description">
+                        Профессиональная фотосъемка любых событий в вашей жизни.
+                        Портреты, свадьбы, семейные фотосессии и корпоративы с индивидуальным подходом к каждому
+                        клиенту.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#how-to-order" class="hero-btn primary">Заказать съемку</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="photos-stack">
+                        <div class="photo-item photo-1">
+                            <img src="images/hero/anna.jpg" alt="Анна Супельман" class="anna-photo">
+                        </div>
+                        <div class="photo-item photo-2">
+                            <img src="images/hero/anna2.jpg" alt="Анна Супельман" class="anna-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <div class="services-header">
+                <h2 class="services-title">Мои услуги</h2>
+                <p class="services-subtitle">
+                    Профессиональные решения для работы с фотографиями любой сложности
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-number="01">
+                    <div class="card-number">01</div>
+                    <h3 class="card-title">Ретушь и обработка фотографий</h3>
+                    <p class="card-description">
+                        Ретуширование старых и черно-белых фотографий — сильный инструмент, который делает фото таким,
+                        каким хочется его видеть. Профессионалы нашей студии превратят снимки в произведение искусства.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="02">
+                    <div class="card-number">02</div>
+                    <h3 class="card-title">Реставрация фотографий</h3>
+                    <p class="card-description">
+                        Реставрация фото осуществляется при помощи специального программного обеспечения. Используем
+                        профессиональные фотосканеры для максимальной глубины цвета и чёткости изображения.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="03">
+                    <div class="card-number">03</div>
+                    <h3 class="card-title">Оцифровка фотоплёнок и фотографий</h3>
+                    <p class="card-description">
+                        Подарите старым фотографиям цифровую жизнь! Оцифровываем чёрно-белые и цветные негативные и
+                        позитивные фотоплёнки, а также слайды. Качественные цифровые изображения удобно хранить.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="04">
+                    <div class="card-number">04</div>
+                    <h3 class="card-title">Фото 360°</h3>
+                    <p class="card-description">
+                        Объёмные фотографии товаров для интернет-магазинов и маркетплейсов. Позволяют покупателям
+                        детальнее разглядеть товар со всех сторон, существенно повышая эффективность продаж.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="05">
+                    <div class="card-number">05</div>
+                    <h3 class="card-title">Слайд-шоу из фотографий</h3>
+                    <p class="card-description">
+                        Фильм из ваших лучших фотографий с заставками, титрами, интересными эффектами и музыкальным
+                        сопровождением. Профессиональный видеоролик с современным художественным оформлением.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="06">
+                    <div class="card-number">06</div>
+                    <h3 class="card-title">Фотомонтаж</h3>
+                    <p class="card-description">
+                        Качественный фотомонтаж включает подстановку лица с фотографии и ретушь для гармонии образа.
+                        Создаём изображения в высоком разрешении с гарантией натуральности и профессионального дизайна.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="07">
+                    <div class="card-number">07</div>
+                    <h3 class="card-title">Коллаж</h3>
+                    <p class="card-description">
+                        Профессиональное объединение нескольких фотографий в одну с помощью фотомонтажа. Талантливо
+                        сделанный коллаж станет оригинальным подарком или стильным украшением для интерьера.
+                    </p>
+                </div>
+
+                <div class="service-card" data-number="08">
+                    <div class="card-number">08</div>
+                    <h3 class="card-title">Художественная обработка</h3>
+                    <p class="card-description">
+                        Художественная обработка фотографий с возможностью удаления/приближения объектов, ретуши лица,
+                        замены одежды и добавления предметов. Превращаем обычные фото в произведения искусства.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <h2 class="portfolio-title">Портфолио</h2>
+                <p class="portfolio-subtitle">
+                    Каждая фотография рассказывает свою уникальную историю, наполненную эмоциями и воспоминаниями
+                </p>
+            </div>
+
+            <div class="portfolio-scatter">
+                <div class="portfolio-slider">
+                    <div class="portfolio-slides" id="portfolioSlides">
+                        <div class="polaroid-photo" data-photo="1" style="--rotation: -8deg; --top: 5%; --left: 8%;">
+                            <img src="images/portfolio/1.jpg" alt="Портфолио 1" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="2" style="--rotation: 12deg; --top: 15%; --left: 25%;">
+                            <img src="images/portfolio/2.jpg" alt="Портфолио 2" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="3" style="--rotation: -5deg; --top: 8%; --left: 45%;">
+                            <img src="images/portfolio/3.jpg" alt="Портфолио 3" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="4" style="--rotation: 15deg; --top: 12%; --left: 65%;">
+                            <img src="images/portfolio/4.jpg" alt="Портфолио 4" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="5" style="--rotation: -12deg; --top: 18%; --left: 82%;">
+                            <img src="images/portfolio/5.jpg" alt="Портфолио 5" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="6" style="--rotation: 7deg; --top: 35%; --left: 5%;">
+                            <img src="images/portfolio/6.jpg" alt="Портфолио 6" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="7" style="--rotation: -10deg; --top: 28%; --left: 22%;">
+                            <img src="images/portfolio/7.jpg" alt="Портфолио 7" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="8" style="--rotation: 18deg; --top: 32%; --left: 40%;">
+                            <img src="images/portfolio/8.jpg" alt="Портфолио 8" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="9" style="--rotation: -6deg; --top: 38%; --left: 58%;">
+                            <img src="images/portfolio/9.jpg" alt="Портфолио 9" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="10" style="--rotation: 9deg; --top: 25%; --left: 75%;">
+                            <img src="images/portfolio/10.jpg" alt="Портфолио 10" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="11"
+                            style="--rotation: -15deg; --top: 55%; --left: 12%;">
+                            <img src="images/portfolio/11.jpg" alt="Портфолио 11" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="12" style="--rotation: 11deg; --top: 48%; --left: 30%;">
+                            <img src="images/portfolio/12.jpg" alt="Портфолио 12" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="13" style="--rotation: -8deg; --top: 52%; --left: 48%;">
+                            <img src="images/portfolio/13.jpg" alt="Портфолио 13" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="14" style="--rotation: 14deg; --top: 58%; --left: 66%;">
+                            <img src="images/portfolio/14.jpg" alt="Портфолио 14" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="15"
+                            style="--rotation: -11deg; --top: 45%; --left: 83%;">
+                            <img src="images/portfolio/15.jpg" alt="Портфолио 15" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="16" style="--rotation: 6deg; --top: 75%; --left: 8%;">
+                            <img src="images/portfolio/16.jpg" alt="Портфолио 16" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="17"
+                            style="--rotation: -13deg; --top: 68%; --left: 25%;">
+                            <img src="images/portfolio/17.jpg" alt="Портфолио 17" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="18" style="--rotation: 16deg; --top: 72%; --left: 43%;">
+                            <img src="images/portfolio/18.jpg" alt="Портфолио 18" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="19" style="--rotation: -7deg; --top: 78%; --left: 61%;">
+                            <img src="images/portfolio/19.jpg" alt="Портфолио 19" loading="lazy">
+                        </div>
+
+                        <div class="polaroid-photo" data-photo="20" style="--rotation: 10deg; --top: 65%; --left: 78%;">
+                            <img src="images/portfolio/20.jpg" alt="Портфолио 20" loading="lazy">
+                        </div>
+                    </div>
+
+                    <button class="slider-nav prev" id="prevBtn">‹</button>
+                    <button class="slider-nav next" id="nextBtn">›</button>
+
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prices">
+
+    </section>
+
+    <section id="how-to-order">
+
+    </section>
+
+    <section id="payment">
+
+    </section>
+
+    <section id="faq">
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+</html>
