@@ -203,7 +203,7 @@ allNavLinks.forEach(link => {
 
             if (targetElement) {
                 e.preventDefault();
-                const targetPosition = targetElement.offsetTop - header.offsetHeight;
+                const targetPosition = targetElement.offsetTop - header.offsetHeight + 80;
 
                 window.scrollTo({
                     top: targetPosition,

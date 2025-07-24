@@ -9,6 +9,14 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#hero.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #hero::before {
@@ -43,8 +51,15 @@
 }
 
 .hero-text {
-    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     max-width: 600px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-text.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hero-title {
@@ -159,8 +174,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeInRight 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
     position: relative;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-image.animate-in {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .photos-stack {
@@ -245,37 +267,6 @@
     border-right: 2px solid #666666;
     border-bottom: 2px solid #666666;
     transform: rotate(45deg);
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 @keyframes bounce {
@@ -630,5 +621,15 @@
     .anna-photo:hover {
         transform: none;
         filter: grayscale(10%) contrast(1.1) brightness(1.02);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #hero,
+    .hero-text,
+    .hero-image {
+        transition: none;
+        transform: none;
+        opacity: 1;
     }
 }

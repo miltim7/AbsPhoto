@@ -1,0 +1,171 @@
+/* prices/prices.css */
+
+#prices {
+    background: #000000;
+    padding: 8rem 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1.2s ease;
+}
+
+#prices.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.prices-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.prices-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+
+.prices-header.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.prices-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(3rem, 5vw, 4rem);
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.prices-subtitle {
+    color: #cccccc;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prices-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: stretch;
+}
+
+.price-card {
+    background: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 2rem 1.5rem;
+    width: 25%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-card.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.price-card:nth-child(1).animate-in { transition-delay: 0.1s; }
+.price-card:nth-child(2).animate-in { transition-delay: 0.2s; }
+.price-card:nth-child(3).animate-in { transition-delay: 0.3s; }
+.price-card:nth-child(4).animate-in { transition-delay: 0.4s; }
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+.price-value {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    font-weight: 900;
+    color: #00ff88;
+    margin-bottom: 0.5rem;
+}
+
+.price-period {
+    color: #999999;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.price-service {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(1.8rem, 2.2vw, 2rem);
+    color: #ffffff;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.price-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.price-features li {
+    color: #cccccc;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.price-features li::before {
+    content: '•';
+    color: #00ff88;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.price-button {
+    background: #000000;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 0.8rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: auto;
+}
+
+.price-button:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 1024px) {
+    .prices-row {
+        flex-wrap: wrap;
+    }
+    
+    .price-card {
+        width: calc(50% - 0.75rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .prices-row {
+        flex-direction: column;
+    }
+    
+    .price-card {
+        width: 100%;
+    }
+}
