@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="faq/faq.css">
     <script defer src="faq/faq.js"></script>
 
+    <link rel="stylesheet" href="contact/contact.css">
+    <script defer src="contact/contact.js"></script>
+
     <link rel="stylesheet" href="footer/footer.css">
     <script defer src="footer/footer.js"></script>
 </head>
@@ -542,67 +545,156 @@
         </div>
     </section>
 
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">Свяжитесь с нами</h2>
+                <p class="contact-subtitle">
+                    Готовы обсудить ваш проект? Свяжитесь с нами любым удобным способом или заполните форму обратной
+                    связи
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-info-title">Наши контакты</h3>
+                    <p class="contact-description">
+                        Мы всегда готовы ответить на ваши вопросы и обсудить детали будущего проекта. Выберите удобный
+                        способ связи или приходите к нам в студию.
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i>●</i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Адрес студии</h4>
+                                <p>г. Москва, ул. Примерная, д.1<br>Метро: Примерная (5 мин пешком)</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i>☎</i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Телефон</h4>
+                                <p><a href="tel:+7xxxxxxxxxx">+7 (xxx) xxx-xx-xx</a><br>Ежедневно с 10:00 до 20:00</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i>@</i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p><a href="mailto:info@avsphoto.ru">info@avsphoto.ru</a><br>Ответим в течение часа</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i>○</i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Режим работы</h4>
+                                <p>Пн-Пт: 10:00 - 20:00<br>Сб-Вс: 12:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3 class="contact-form-title">Напишите нам</h3>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Ваше имя *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Сообщение *</label>
+                            <textarea id="message" name="message" class="form-textarea"
+                                placeholder="Расскажите подробнее о вашем проекте..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="form-submit">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
-    <div class="footer-container">
-        <div class="footer-brand">
-            <a href="/" class="footer-logo">AVS Photo</a>
-            <p class="footer-brand-description">
-                Студия профессиональной фотографии и обработки изображений Анны Супельман. Создаем кадры, которые останутся с вами навсегда.
-            </p>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo">AVS Photo</a>
+                <p class="footer-brand-description">
+                    Студия профессиональной фотографии и обработки изображений Анны Супельман. Создаем кадры, которые
+                    останутся с вами навсегда.
+                </p>
+            </div>
+
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3 class="footer-links-title">Навигация</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#portfolio">Портфолио</a></li>
+                        <li><a href="#prices">Цены</a></li>
+                        <li><a href="#how-to-order">Как заказать?</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-info">
+                    <h3 class="footer-links-title">Информация</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="#payment">Оплата</a></li>
+                        <li><a href="/gallery.html">Галерея</a></li>
+                        <li><a href="/about.html">О студии</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-links-title">Свяжитесь с нами</h3>
+                    <ul class="footer-contact-list">
+                        <li><strong>Email:</strong> info@avsphoto.ru</li>
+                        <li><strong>Телефон:</strong> +7 (xxx) xxx-xx-xx</li>
+                        <li><strong>Адрес:</strong> Москва, Россия</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-business-info">
+                    <strong>ИП Супельман Анна Викторовна</strong><br>
+                    ИНН 123456789012 ОГРНИП 987654321012345<br>
+                    Зарегистрирован 01.01.2023 в Инспекции Федеральной налоговой службы № 1 по г. Москва<br>
+                    Юр. адрес: г. Москва, ул. Примерная, д.1, корп. 1
+                </div>
+
+                <div class="footer-legal">
+                    <a href="/terms.html">Договор-оферта</a>
+                    <a href="/privacy.html">Политика конфиденциальности</a>
+                </div>
+
+                <div class="footer-copyright">
+                    Copyright ©2025 Все права защищены | AVS Photo by Anna Supelman
+                </div>
+            </div>
         </div>
-
-        <div class="footer-top">
-            <div class="footer-links">
-                <h3 class="footer-links-title">Навигация</h3>
-                <ul class="footer-links-list">
-                    <li><a href="/">Главная</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#portfolio">Портфолио</a></li>
-                    <li><a href="#prices">Цены</a></li>
-                    <li><a href="#how-to-order">Как заказать?</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-info">
-                <h3 class="footer-links-title">Информация</h3>
-                <ul class="footer-links-list">
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="/contact.html">Контакты</a></li>
-                    <li><a href="#payment">Оплата</a></li>
-                    <li><a href="/gallery.html">Галерея</a></li>
-                    <li><a href="/about.html">О студии</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-contact">
-                <h3 class="footer-links-title">Свяжитесь с нами</h3>
-                <ul class="footer-contact-list">
-                    <li><strong>Email:</strong> info@avsphoto.ru</li>
-                    <li><strong>Телефон:</strong> +7 (xxx) xxx-xx-xx</li>
-                    <li><strong>Адрес:</strong> Москва, Россия</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="footer-business-info">
-                <strong>ИП Супельман Анна Владимировна</strong><br>
-                ИНН 123456789012 ОГРНИП 987654321012345<br>
-                Зарегистрирован 01.01.2023 в Инспекции Федеральной налоговой службы № 1 по г. Москва<br>
-                Юр. адрес: г. Москва, ул. Примерная, д.1, корп. 1
-            </div>
-
-            <div class="footer-legal">
-                <a href="/terms.html">Договор-оферта</a>
-                <a href="/privacy.html">Политика конфиденциальности</a>
-            </div>
-
-            <div class="footer-copyright">
-                Copyright ©2025 Все права защищены | AVS Photo by Anna Supelman
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 </body>
