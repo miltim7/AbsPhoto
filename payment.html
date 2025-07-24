@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата и доставка - AVS Photo</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="payment/payment.css">
+
+    <script defer src="js/components.js"></script>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <section id="payment">
+        <div class="payment-container">
+            <div class="payment-header">
+                <h1 class="payment-title">Оплата и доставка</h1>
+                <p class="payment-subtitle">
+                    Информация о способах оплаты услуг фотосъемки и обработки изображений, а также доставке готовых
+                    материалов
+                </p>
+            </div>
+
+            <div class="payment-content">
+                <div class="payment-section">
+                    <h2 class="section-title">Способы оплаты</h2>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Доступные способы оплаты:</h3>
+                        <ul class="payment-list">
+                            <li><strong>Банковские карты:</strong> VISA, MasterCard, МИР</li>
+                            <li><strong>Онлайн-платежи:</strong> через защищенную платежную систему</li>
+                            <li><strong>Банковский перевод:</strong> на расчетный счет ИП</li>
+                            <li><strong>Наличные:</strong> при личной встрече в студии</li>
+                        </ul>
+                    </div>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Условия оплаты:</h3>
+                        <p>Оплата услуг производится по предоплате в размере 100% от стоимости заказа. Оплата заказа
+                            подтверждает согласие клиента со всеми условиями договора-оферты.</p>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Оплата банковской картой</h2>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Процесс оплаты:</h3>
+                        <p>При оплате банковской картой обработка платежа происходит на авторизационной странице банка,
+                            где необходимо ввести данные карты:</p>
+                        <ul class="payment-list">
+                            <li>Тип карты</li>
+                            <li>Номер карты</li>
+                            <li>Срок действия карты</li>
+                            <li>Имя держателя карты (латинскими буквами)</li>
+                            <li>CVC2/CVV2 код</li>
+                        </ul>
+                    </div>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">3D-Secure аутентификация:</h3>
+                        <p>Если ваша карта подключена к услуге 3D-Secure, вы будете автоматически переадресованы на
+                            страницу банка для прохождения процедуры аутентификации. Информацию о правилах
+                            дополнительной идентификации уточняйте в банке, выдавшем карту.</p>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Безопасность платежей</h2>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Защита данных:</h3>
+                        <p>Безопасность обработки интернет-платежей гарантирована международным сертификатом
+                            безопасности <strong>PCI DSS</strong>. Передача информации происходит с применением
+                            технологии шифрования <strong>SSL</strong>. Конфиденциальные данные недоступны посторонним
+                            лицам.</p>
+                    </div>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Рекомендации по безопасности:</h3>
+                        <ul class="payment-list">
+                            <li>Берегите банковские карты как наличные деньги</li>
+                            <li>Никогда не передавайте полный номер карты по телефону</li>
+                            <li>Имейте под рукой номер для экстренной связи с банком</li>
+                            <li>Вводите реквизиты карты только при совершении покупки</li>
+                            <li>Не указывайте данные карты по каким-либо другим причинам</li>
+                        </ul>
+                    </div>
+
+                    <div class="security-badge">
+                        <div class="badge-content">
+                            <div class="badge-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <div class="badge-text">
+                                <strong>100% Безопасность</strong>
+                                <p>Платежи защищены стандартами PCI DSS и SSL-шифрованием</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Возврат средств</h2>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Условия возврата:</h3>
+                        <p>При запросе возврата денежных средств возврат производится исключительно на ту же банковскую
+                            карту, с которой была произведена оплата.</p>
+                    </div>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Отказ от услуги:</h3>
+                        <p>В соответствии со статьей 32 федерального закона «О защите прав потребителей», потребитель
+                            вправе расторгнуть договор об оказании услуги в любое время, уплатив исполнителю часть цены
+                            пропорционально части оказанной услуги до получения извещения о расторжении договора.</p>
+                    </div>
+
+                    <div class="payment-item">
+                        <h3 class="payment-subtitle-item">Права потребителя при обнаружении недостатков:</h3>
+                        <ul class="payment-list">
+                            <li>Безвозмездное устранение недостатков</li>
+                            <li>Соответствующее уменьшение цены</li>
+                            <li>Возмещение расходов по устранению недостатков</li>
+                        </ul>
+                        <p>Требования могут быть предъявлены в течение гарантийного срока, а при его отсутствии — в
+                            разумный срок, в пределах двух лет со дня принятия услуги.</p>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Реквизиты для оплаты</h2>
+
+                    <div class="requisites-card">
+                        <h3 class="requisites-title">Банковские реквизиты</h3>
+                        <div class="requisites-grid">
+                            <div class="requisites-item">
+                                <span class="requisites-label">Получатель:</span>
+                                <span class="requisites-value">ИП Супельман Анна Викторовна</span>
+                            </div>
+                            <div class="requisites-item">
+                                <span class="requisites-label">ИНН:</span>
+                                <span class="requisites-value">123456789012</span>
+                            </div>
+                            <div class="requisites-item">
+                                <span class="requisites-label">ОГРНИП:</span>
+                                <span class="requisites-value">987654321012345</span>
+                            </div>
+                            <div class="requisites-item">
+                                <span class="requisites-label">Банк:</span>
+                                <span class="requisites-value">Сбербанк России</span>
+                            </div>
+                            <div class="requisites-item">
+                                <span class="requisites-label">БИК:</span>
+                                <span class="requisites-value">044525225</span>
+                            </div>
+                            <div class="requisites-item">
+                                <span class="requisites-label">Расчетный счет:</span>
+                                <span class="requisites-value">40802810400000000000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-section">
+                    <h2 class="section-title">Доставка результатов</h2>
+
+                    <div class="delivery-grid">
+                        <div class="delivery-card">
+                            <div class="delivery-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 class="delivery-title">Электронная доставка</h3>
+                            <p class="delivery-description">Обработанные фотографии доставляются в электронном виде
+                                через облачное хранилище или email</p>
+                            <div class="delivery-features">
+                                <span class="feature-badge">Бесплатно</span>
+                                <span class="feature-badge">Мгновенно</span>
+                            </div>
+                        </div>
+
+                        <div class="delivery-card">
+                            <div class="delivery-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none" />
+                                    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" />
+                                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 class="delivery-title">Физический носитель</h3>
+                            <p class="delivery-description">Доставка готовых материалов на DVD/USB-носителе через Почту
+                                России или курьерскую службу</p>
+                            <div class="delivery-features">
+                                <span class="feature-badge">По тарифам службы</span>
+                                <span class="feature-badge">3-7 дней</span>
+                            </div>
+                        </div>
+
+                        <div class="delivery-card">
+                            <div class="delivery-icon">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M19 7c0-1.1-.9-2-2-2h-3l-2-2H8c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h8l4-4V7zM17 7v8l-3 3H8V7h3.17l2-2H17z"
+                                        stroke="currentColor" stroke-width="2" fill="none" />
+                                    <path d="M1 6v2h2v10c0 1.1.9 2 2 2h14v-2H5V8h2V6H1z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <h3 class="delivery-title">Курьерская доставка</h3>
+                            <p class="delivery-description">Доставка через службы CDEK, DPD или другие курьерские
+                                компании по Москве и регионам</p>
+                            <div class="delivery-features">
+                                <span class="feature-badge">Быстро</span>
+                                <span class="feature-badge">Надежно</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-footer">
+                    <div class="contact-info">
+                        <h3>Остались вопросы?</h3>
+                        <p>Свяжитесь с нами для получения подробной консультации по вопросам оплаты и доставки</p>
+                        <a href="/#contact" class="contact-button">Связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
