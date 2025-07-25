@@ -15,11 +15,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1.5rem 3%;
     max-width: 1400px;
     margin: 0 auto;
     height: 80px;
     transition: all 0.4s ease;
+    box-sizing: border-box;
 }
 
 .main-content {
@@ -266,14 +267,6 @@
 @media (max-width: 1400px) {
     .navbar {
         padding: 1.5rem 5%;
-    }
-    
-    .nav-menu {
-        gap: 2.3rem;
-    }
-    
-    .nav-link {
-        font-size: 0.98rem;
     }
 }
 

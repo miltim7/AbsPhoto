@@ -1,7 +1,6 @@
 /* login/login.css */
 
 #login {
-    min-height: 100vh;
     background: #ffffff;
     display: flex;
     align-items: center;
