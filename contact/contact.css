@@ -30,9 +30,11 @@
 }
 
 .contact-container {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 5%;
+    box-sizing: border-box;
     position: relative;
     z-index: 2;
 }
@@ -244,7 +246,7 @@
 
 .form-row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.5rem;
 }
 
@@ -330,7 +332,7 @@
     .contact-container {
         padding: 0 4%;
     }
-    
+
     .contact-content {
         gap: 5rem;
     }
@@ -340,48 +342,77 @@
     #contact {
         padding: 6rem 0;
     }
-    
+
     .contact-header {
         margin-bottom: 5rem;
     }
-    
+
     .contact-content {
         gap: 4rem;
     }
-    
+
     .contact-form {
         padding: 2.5rem;
     }
 }
 
 @media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
     #contact {
         padding: 4rem 0;
+        width: 100%;
+        overflow-x: hidden; /* Предотвращаем горизонтальный скролл */
     }
     
     .contact-container {
         padding: 0 5%;
+        max-width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box; /* Учитываем padding в ширине */
     }
     
     .contact-header {
         margin-bottom: 3rem;
+        width: 100%;
+        text-align: center;
+        padding: 0 5%; /* Добавляем внутренние отступы */
+        box-sizing: border-box;
+    }
+    
+    .contact-title, 
+    .contact-subtitle {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .contact-subtitle {
+        padding: 0 5%; /* Добавляем отступы для текста */
     }
     
     .contact-content {
         grid-template-columns: 1fr;
         gap: 3rem;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 5%;
+        box-sizing: border-box;
     }
     
     .contact-info,
     .contact-form-wrapper {
-        transform: translateY(20px);
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0;
     }
     
-    .contact-info.animate-in,
-    .contact-form-wrapper.animate-in {
-        transform: translateY(0);
-    }
-    
+    /* Остальные стили из предыдущего решения */
     .contact-info-title,
     .contact-form-title {
         text-align: center;
@@ -394,43 +425,44 @@
         border-left: none;
         border-bottom: 2px solid transparent;
         text-align: left;
+        max-width: 100%;
     }
-    
+
     .contact-item:hover {
         transform: translateY(-3px);
         border-left: none;
         border-bottom-color: #000000;
     }
-    
+
     .contact-icon {
         width: 50px;
         height: 50px;
         margin-right: 1.5rem;
     }
-    
+
     .contact-details h4 {
         font-size: 1.1rem;
     }
-    
+
     .contact-details p {
         font-size: 0.95rem;
     }
-    
+
     .contact-form {
         padding: 2rem;
         border-radius: 0;
     }
-    
+
     .form-group {
         margin-bottom: 1.5rem;
     }
-    
+
     .form-input,
     .form-textarea,
     .form-select {
         padding: 1rem;
     }
-    
+
     .form-submit {
         padding: 1.3rem;
     }
@@ -440,26 +472,26 @@
     .contact-container {
         padding: 0 3%;
     }
-    
+
     .contact-item {
         padding: 1rem;
         margin-bottom: 2rem;
     }
-    
+
     .contact-icon {
         width: 50px;
         height: 50px;
         margin-right: 1.5rem;
     }
-    
+
     .contact-icon i {
         font-size: 1.2rem;
     }
-    
+
     .contact-form {
         padding: 1.5rem;
     }
-    
+
     .form-input,
     .form-textarea,
     .form-select {
@@ -472,12 +504,12 @@
         flex-direction: row;
         text-align: left;
     }
-    
+
     .contact-icon {
         margin-right: 1.2rem;
         margin-bottom: 0;
     }
-    
+
     .contact-form {
         padding: 1.5rem;
     }
@@ -487,7 +519,7 @@
     .contact-container {
         padding: 0 2%;
     }
-    
+
     .contact-form {
         padding: 1.2rem;
     }
@@ -499,41 +531,42 @@
         border-left-color: transparent;
         background: transparent;
     }
-    
+
     .contact-item:hover .contact-icon {
         transform: none;
         box-shadow: none;
     }
-    
+
     .contact-item:hover .contact-icon::before {
         left: -100%;
     }
-    
+
     .contact-map:hover {
         background: #f8f8f8;
         border-color: #e0e0e0;
     }
-    
+
     .contact-form:hover {
         border-color: #e0e0e0;
         box-shadow: none;
     }
-    
+
     .contact-form:hover::before {
         transform: scaleX(0);
     }
-    
+
     .form-submit:hover {
         transform: none;
         box-shadow: none;
     }
-    
+
     .form-submit:hover::before {
         left: -100%;
     }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
     #contact,
     .contact-header,
     .contact-info,
